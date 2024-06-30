@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <main class="rating">
+      <div class="star">
+        <img src="images/icon-star.svg" alt="Star" />
+      </div>
+      <h1 class="heading">How did we do?</h1>
+      <div class="para">
+        <p class="para_feedback">
+          Please let us know how we did with your support request.All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+
+      <div class="rate">
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+      </div>
+
+      <button class="submit">SUBMIT</button>
+    </main>
+    <main class="Thank_you">
+      <img src="images/illustration-thank-you.svg" alt="" />
+      <p class="selected_rate">You selected <span id="rating_num">5</span> out of 5</p>
+
+      <h2 class="Thank_you_word">Thank you</h2>
+
+      <p class="appreciate_para">
+        We appreciate you taking the time to give a rating.If you ever need more
+        support,don't hesitate to get in touch
+      </p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

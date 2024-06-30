@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+body{
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.rating,.Thank_you{
+    background-color: var(--Dark-Blue);
+    width: 88%;
+    border-radius:20px;
+    padding: 1.2rem;
+}
+
+.rating img{
+    width: 15px;
+    height: 15px;
+}
+
+.rating .star{
+    width:45px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(214, 20%, 23%);
+    border-radius: 30px;
+}
+
+.rating .heading{
+    color: var(--White);
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.rating .para_feedback,.appreciate_para{
+    color: var(--Light-Grey);
+    line-height: 1.4rem;
+    font-size: 15px;
+}
+
+.rating .rate{
+    margin: 1.3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate button{
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: hsl(214, 20%, 23%);
+    color: var(--Light-Grey);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.rating .submit{
+    width: 100%;
+    height: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: var(--Very-Dark-Blue);
+    background-color: var(--Orange);
+    border: none;
+    border-radius:50px;
+}
+
+.Thank_you{
+    text-align: center;
+}
+
+.Thank_you .selected_rate{
+    background-color:hsl(214, 20%, 23%) ;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50px;
+    color: var(--Orange);
+    font-weight: 500;
+}
+
+.Thank_you_word{
+    color: var(--White);
+    margin: 1rem;
+}
+
+.Thank_you{
+    display: none;
+}
+
+.rating{
+    display: block;
+}
+
+.rate button:hover{
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+    cursor:pointer;
+}
+
+.rate button:focus{
+    background-color: var(--White);
+    color: var(--Very-Dark-Blue);
+}
+
+.submit:hover{
+    background-color: var(--White);
+    cursor: pointer;
+}
+
+@media screen and (min-width:450px) {
+    .rating,.Thank_you{
+        width: 350px;
+        height: 350px;
+    }
+}
